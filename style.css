@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 1s;
+}
+
+:root {
+    --color-task01: #f0a500;
+    --color-task02: #35d0ba;
+    --color-task03: #fa744f;
+}
+
+body {
+    background: #313131;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.board {
+    background: #525252;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    border-radius: 1.5%;
+    min-height: 10vh;
+    margin-top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.board h2 {
+    align-self: center;
+    color: #ddd;
+}
+
+.dropzone {
+    background: #414141;
+    min-height: 5vh;
+    margin: 5px 10px;
+    border-radius: 1.5%;
+}
+
+.card {
+    background: #eee;
+    margin: 10px 10px;
+    border: 3px solid #000;
+    border-radius: 1.7%;
+    padding: 5px;
+}
+
+.card h2 {
+    color: #111;
+}
+
+.highlight {
+    background: #626262;
+}
+
+.over {
+    background: #828282;
+}
+
+.type01 {
+    border-color: var(--color-task01);
+}
+
+.type01 h2 {
+    color: var(--color-task01);
+}
+
+.type02 {
+    border-color: var(--color-task02);
+}
+
+.type02 h2 {
+    color: var(--color-task02);
+}
+
+.type03 {
+    border-color: var(--color-task03);
+}
+
+.type03 h2 {
+    color: var(--color-task03);
+}
